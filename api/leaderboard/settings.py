@@ -174,14 +174,15 @@ POSTGRES_PORT = str(os.getenv("POSTGRES_PORT"))
 
 DATABASES = {
     'default': {
-        'ENGINE': POSTGRES_ENGINE,
-        'NAME': POSTGRES_NAME,
-        'USER': POSTGRES_USER,
-        'PASSWORD': POSTGRES_PASSWORD,
-        'HOST': POSTGRES_HOST,
-        'PORT': POSTGRES_PORT,
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',  # Database name
+        'USER': 'postgres',  # Username
+        'PASSWORD': 'charan@1810',  # Replace with your Supabase password
+        'HOST': 'db.zndtgvlxbsullgtzgumk.supabase.co',  # Host
+        'PORT': '5432',  # Port
     }
 }
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
